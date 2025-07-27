@@ -1,0 +1,164 @@
+/* Default Dark Theme */
+:root {
+    --bg-color: #1a1a1a;
+    --card-bg: #2d3748;
+    --text-color: #e2e8f0;
+    --border-color: #4a5568;
+    --primary-color: #3182ce;
+    --secondary-color: #2b6cb0;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+    --primary-color: #0d6efd;
+    --secondary-color: #0b5ed7;
+}
+
+* {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-control, .form-select {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem rgba(49, 130, 206, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.btn-success {
+    font-size: 1.1rem;
+}
+
+.word-result {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: var(--card-bg);
+}
+
+.word-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.phonetic {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.meaning {
+    margin-top: 15px;
+}
+
+.part-of-speech {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.definition {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.example {
+    font-style: italic;
+    color: #6c757d;
+    margin-left: 20px;
+}
+
+.translation-result {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    text-align: center;
+}
+
+.original-word {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.translated-word {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 1.1rem;
+    padding: 15px;
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    border-radius: 5px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+#themeToggle {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
